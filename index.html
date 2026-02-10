@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岳威科技 | AI 頂尖實戰課程 | AI 実践コース</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', 'Noto Sans JP', sans-serif;
+            background-color: #ffffff;
+            color: #1e293b;
+            overflow-x: hidden;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #eff6ff 0%, #ffffff 50%, #fff1f2 100%);
+        }
+
+        .accent-gradient {
+            background: linear-gradient(90deg, #1e40af 0%, #e11d48 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(30, 64, 175, 0.1);
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .card-glass:hover {
+            transform: translateY(-5px);
+            border-color: rgba(225, 29, 72, 0.3);
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #1e40af 0%, #1d4ed8 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 10px 20px rgba(30, 64, 175, 0.3);
+            transform: scale(1.02);
+        }
+
+        .btn-accent {
+            background: linear-gradient(90deg, #e11d48 0%, #be123c 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-accent:hover {
+            box-shadow: 0 10px 20px rgba(225, 29, 72, 0.3);
+            transform: scale(1.02);
+        }
+
+        .jp-text {
+            font-size: 0.85em;
+            color: #64748b;
+            display: block;
+            font-weight: 400;
+        }
+
+        .timeline-dot {
+            position: relative;
+        }
+
+        .timeline-dot::before {
+            content: "";
+            position: absolute;
+            left: -24px;
+            top: 50%;
+            width: 12px;
+            height: 12px;
+            background: #e11d48;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        @keyframes subtle-move {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="gradient-bg">
+
+    <!-- 導航欄 / ナビゲーション -->
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto border-b border-blue-50">
+        <div class="flex flex-col">
+            <span class="text-2xl font-bold tracking-tighter text-blue-900">岳威科技</span>
+            <span class="text-[10px] tracking-[0.2em] text-red-600 font-bold uppercase underline decoration-blue-600 underline-offset-4">YUEWEI TECHNOLOGY</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-10">
+            <a href="#about" class="group">
+                <span class="block text-sm font-bold text-gray-700">課程內容</span>
+                <span class="block text-[10px] text-gray-400">コース内容</span>
+            </a>
+            <a href="#schedule" class="group">
+                <span class="block text-sm font-bold text-gray-700">時程安排</span>
+                <span class="block text-[10px] text-gray-400">スケジュール</span>
+            </a>
+            <a href="#register" class="btn-primary px-8 py-3 rounded-full text-sm font-bold">
+                立即報名 / 今すぐ申し込む
+            </a>
+        </div>
+    </nav>
+
+    <!-- 主視覺區 / ヒーローセクション -->
+    <section class="max-w-7xl mx-auto px-8 py-24 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 mb-6 bg-red-50 border border-red-100 rounded-lg">
+                <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                <span class="text-xs font-bold text-red-600">2026 頂尖 AI 系列 | 2026 先端 AI コース</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 leading-tight text-slate-900">
+                駕馭人工智慧的<br>
+                <span class="accent-gradient">未來力量</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-10 leading-relaxed border-l-4 border-blue-600 pl-6">
+                岳威科技精心打造，由專家帶領您從零開始掌握生成式 AI。<br>
+                <span class="jp-text mt-2">Yuewei Technology がお届けする、エキスパートによる生成 AI 実践講座。</span>
+            </p>
+            
+            <div class="flex flex-wrap gap-6 mb-12">
+                <div class="flex items-center space-x-3 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+                    <i data-lucide="calendar" class="text-blue-600"></i>
+                    <div>
+                        <span class="block font-bold">2月10日 (二)</span>
+                        <span class="jp-text">2月10日 (火)</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
+                    <i data-lucide="clock" class="text-red-600"></i>
+                    <div>
+                        <span class="block font-bold">10:00 - 17:00</span>
+                        <span class="jp-text">午前10時〜午後5時</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#register" class="btn-accent inline-block px-12 py-5 rounded-2xl font-bold text-xl shadow-lg">
+                獲取席次 / 席を予約する
+            </a>
+        </div>
+        
+        <div class="md:w-1/2 mt-16 md:mt-0 relative flex justify-center">
+            <div class="absolute w-72 h-72 bg-blue-400/10 blur-[100px] -z-10 rounded-full"></div>
+            <div class="absolute w-72 h-72 bg-red-400/10 blur-[100px] -z-10 rounded-full translate-x-20 translate-y-20"></div>
+            
+            <div class="card-glass p-10 rounded-[40px] border-2 border-white relative">
+                <div class="flex items-center space-x-4 mb-8">
+                    <div class="w-14 h-14 bg-red-600 rounded-2xl flex items-center justify-center shadow-lg">
+                        <i data-lucide="brain-circuit" class="text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-800">岳威 AI 實驗室</h3>
+                        <p class="jp-text">Yuewei AI ラボ</p>
+                    </div>
+                </div>
+                <ul class="space-y-6">
+                    <li class="flex items-start space-x-3">
+                        <i data-lucide="check-circle-2" class="text-green-500 mt-1 shrink-0"></i>
+                        <div>
+                            <p class="font-bold text-slate-700">最新生成技術解析</p>
+                            <p class="jp-text">最新の生成技術の解析</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i data-lucide="check-circle-2" class="text-green-500 mt-1 shrink-0"></i>
+                        <div>
+                            <p class="font-bold text-slate-700">一對一實作指導</p>
+                            <p class="jp-text">1対1の実践指導</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i data-lucide="check-circle-2" class="text-green-500 mt-1 shrink-0"></i>
+                        <div>
+                            <p class="font-bold text-slate-700">產業轉型策略</p>
+                            <p class="jp-text">産業変革戦略</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 課程特點 / 特徴 -->
+    <section id="about" class="max-w-7xl mx-auto px-8 py-20 grid md:grid-cols-3 gap-10">
+        <div class="card-glass p-10 rounded-3xl">
+            <div class="w-12 h-12 bg-blue-600/10 rounded-full flex items-center justify-center mb-6">
+                <i data-lucide="zap" class="text-blue-600"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">高效能學習</h3>
+            <p class="jp-text mb-4">高効率な学習</p>
+            <p class="text-slate-500 text-sm leading-relaxed">我們在一天內為您規劃了最核心的內容，讓時間價值最大化。</p>
+        </div>
+        <div class="card-glass p-10 rounded-3xl">
+            <div class="w-12 h-12 bg-red-600/10 rounded-full flex items-center justify-center mb-6">
+                <i data-lucide="globe" class="text-red-600"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">國際級視野</h3>
+            <p class="jp-text mb-4">世界的な視野</p>
+            <p class="text-slate-500 text-sm leading-relaxed">同步全球最新的 AI 技術趨勢，不落後於任何競爭對手。</p>
+        </div>
+        <div class="card-glass p-10 rounded-3xl">
+            <div class="w-12 h-12 bg-slate-600/10 rounded-full flex items-center justify-center mb-6">
+                <i data-lucide="shield-check" class="text-slate-600"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">權威級認證</h3>
+            <p class="jp-text mb-4">権威ある認証</p>
+            <p class="text-slate-500 text-sm leading-relaxed">完成課程後將授予岳威科技官方簽署的實戰培訓證書。</p>
+        </div>
+    </section>
+
+    <!-- 時程安排 / スケジュール -->
+    <section id="schedule" class="bg-slate-50 py-24">
+        <div class="max-w-4xl mx-auto px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">課程時程安排</h2>
+                <p class="jp-text text-lg">タイムスケジュール</p>
+            </div>
+            
+            <div class="space-y-12 ml-6 border-l-2 border-slate-200 pl-10">
+                <div class="timeline-dot">
+                    <span class="text-red-600 font-bold">10:00 - 12:00</span>
+                    <h4 class="text-xl font-bold mt-2">AI 基礎與產業格局</h4>
+                    <p class="jp-text mb-2">AIの基礎と産業展望</p>
+                    <p class="text-slate-500 text-sm">解析人工智慧如何重塑現代商業社會。</p>
+                </div>
+                <div class="timeline-dot">
+                    <span class="text-blue-600 font-bold">12:00 - 13:00</span>
+                    <h4 class="text-xl font-bold mt-2">商業午餐與自由交流</h4>
+                    <p class="jp-text mb-2">ビジネスランチと交流会</p>
+                    <p class="text-slate-500 text-sm">與各界菁英建立深度聯繫。</p>
+                </div>
+                <div class="timeline-dot">
+                    <span class="text-red-600 font-bold">13:00 - 15:30</span>
+                    <h4 class="text-xl font-bold mt-2">生成式 AI 工具實戰</h4>
+                    <p class="jp-text mb-2">生成AIツールの実践</p>
+                    <p class="text-slate-500 text-sm">手把手帶領操作最新 AI 創作與生產力工具。</p>
+                </div>
+                <div class="timeline-dot">
+                    <span class="text-blue-600 font-bold">15:30 - 17:00</span>
+                    <h4 class="text-xl font-bold mt-2">企業轉型方案研討</h4>
+                    <p class="jp-text mb-2">企業変革ソリューション検討</p>
+                    <p class="text-slate-500 text-sm">針對不同行業需求進行案例實戰演練。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 報名表單 / 申し込み -->
+    <section id="register" class="max-w-4xl mx-auto px-8 py-32">
+        <div class="bg-white rounded-[40px] shadow-2xl border border-slate-100 overflow-hidden flex flex-col md:flex-row">
+            <div class="md:w-1/3 btn-primary p-12 text-white flex flex-col justify-between">
+                <div>
+                    <h3 class="text-3xl font-bold mb-4">報名資訊</h3>
+                    <p class="jp-text text-blue-100 opacity-80">お申し込み情報</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <i data-lucide="map-pin"></i>
+                        <span>岳威科技研發總部</span>
+                    </div>
+                    <div class="flex items-center space-x-4 bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/20">
+                        <i data-lucide="phone" class="text-red-400"></i>
+                        <div>
+                            <span class="block font-bold">0915-202-659</span>
+                            <span class="text-[10px] text-blue-100">專員服務熱線</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-2/3 p-12">
+                <form id="regForm" class="space-y-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-2 border-b-2 border-slate-100 focus-within:border-blue-600 transition">
+                            <label class="block text-xs font-bold text-slate-400 uppercase">姓名 / お名前</label>
+                            <input type="text" required class="w-full py-2 bg-transparent outline-none text-lg font-medium" placeholder="您的姓名">
+                        </div>
+                        <div class="space-y-2 border-b-2 border-slate-100 focus-within:border-blue-600 transition">
+                            <label class="block text-xs font-bold text-slate-400 uppercase">電話 / 電話番号</label>
+                            <input type="tel" required class="w-full py-2 bg-transparent outline-none text-lg font-medium" placeholder="09XX-XXX-XXX">
+                        </div>
+                    </div>
+                    <div class="space-y-2 border-b-2 border-slate-100 focus-within:border-blue-600 transition">
+                        <label class="block text-xs font-bold text-slate-400 uppercase">電子郵件 / メール</label>
+                        <input type="email" required class="w-full py-2 bg-transparent outline-none text-lg font-medium" placeholder="example@yuewei.com">
+                    </div>
+                    <div class="space-y-2 border-b-2 border-slate-100 focus-within:border-blue-600 transition">
+                        <label class="block text-xs font-bold text-slate-400 uppercase">服務單位 / 所属</label>
+                        <input type="text" class="w-full py-2 bg-transparent outline-none text-lg font-medium" placeholder="公司或單位名稱">
+                    </div>
+                    
+                    <button type="submit" class="w-full btn-accent py-5 rounded-2xl font-bold text-xl">
+                        確認提交 / 送信する
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 / フッター -->
+    <footer class="bg-white border-t border-slate-100 py-16 text-center">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="mb-8">
+                <span class="text-xl font-black text-slate-900 border-b-2 border-red-600 pb-1">岳威科技</span>
+                <span class="jp-text mt-2">Yuewei Technology</span>
+            </div>
+            <p class="text-slate-400 text-sm">&copy; 2026 岳威科技股份有限公司. 著作權所有。</p>
+            <div class="flex flex-col items-center mt-4 space-y-1">
+                <p class="text-slate-500 font-bold">聯絡我們：0915-202-659</p>
+                <p class="text-slate-400 text-xs">台北市信義區科技大道 8 號 | contact@yuewei.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 成功彈窗 / 成功ポップアップ -->
+    <div id="successModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-md hidden items-center justify-center z-50 p-6">
+        <div class="bg-white max-w-md w-full p-12 rounded-[32px] text-center shadow-2xl">
+            <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-8">
+                <i data-lucide="send" class="text-blue-600 w-10 h-10"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">提交成功</h3>
+            <p class="jp-text mb-6">送信が完了しました</p>
+            <p class="text-slate-500 mb-10 leading-relaxed">感謝您的報名，我們將於 24 小時內由專員聯繫您（0915-202-659）或發送電子郵件確認席次。</p>
+            <button onclick="closeModal()" class="w-full py-4 btn-primary rounded-xl font-bold">
+                確認 / 了解
+            </button>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        const form = document.getElementById('regForm');
+        const modal = document.getElementById('successModal');
+
+        form.onsubmit = (e) => {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        };
+
+        function closeModal() {
+            modal.style.display = 'none';
+            form.reset();
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

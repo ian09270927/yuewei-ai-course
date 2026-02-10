@@ -1,0 +1,12 @@
+{
+  "name": "yuewei-ai-course",
+  "version": "1.0.0",
+  "description": "岳威科技 AI 頂尖實戰課程報名網站",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 3000"
+  },
+  "keywords": ["AI", "course", "yuewei"],
+  "author": "",
+  "license": "MIT"
+}
